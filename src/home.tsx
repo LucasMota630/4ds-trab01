@@ -14,10 +14,10 @@ export default function Home() {
             <Image source={require("../assets/images/guko.png")} style={styles.image} />
             <Text style={styles.texto}>Cadastro</Text>
 
-            <TextInput value={nome1} onChangeText={setNome1} style={styles.nome}/>
-            <TextInput value={nome2} onChangeText={setNome2} style={styles.nome}/>
-            <TextInput value={nome3} onChangeText={setNome3} style={styles.nome}/>
-            <TextInput value={nome4} onChangeText={setNome4} style={styles.nome}/>
+            <TextInput value={nome1} onChangeText={setNome1} placeholder="Nome" style={styles.nome}/>
+            <TextInput value={nome2} onChangeText={setNome2} placeholder="E-mail" style={styles.nome}/>
+            <TextInput value={nome3} onChangeText={setNome3} placeholder="Telefone" style={styles.nome}/>
+            <TextInput value={nome4} onChangeText={setNome4} placeholder="Senha" style={styles.nome}/>
 
             <View style={styles.butao}>
                 <Button title="Cadastrar"/>

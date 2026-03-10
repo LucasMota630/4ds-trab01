@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     width: "80%",
     height: 70 ,
-    textAlign: "center",
+    textAlign: "left",
     },
     butao: {
     padding: 8,
