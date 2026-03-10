@@ -4,35 +4,24 @@ import styles from './StyleHome';
 
 export default function Home() {
 
-    const [mensagem, setMessage] = useState('Sua sorte de hoje é...');
-    const [nome, setNome] = useState("");
-
-    const abrir = () => {
-        const numero = Math.floor(Math.random() * 10);
-
-        const frases = [
-            'Beta1',
-            'Beta2',
-            'Beta3',
-            'Beta4',
-            'Beta5',
-            'Beta6',
-            'Beta7',
-            'Beta8',
-            'Beta9',
-            'Beta10',
-        ];
-
-        setMessage(frases[numero]);
-    };
+    const [nome1, setNome1] = useState("");
+    const [nome2, setNome2] = useState("");
+    const [nome3, setNome3] = useState("");
+    const [nome4, setNome4] = useState("");
 
     return (
         <View style={styles.conteiner}>
-            <Image source={require("../assets/images/guko.png")} />
-            <Text style={styles.texto}>Beta</Text>
-            <TextInput value={nome} onChangeText={setNome} style={styles.nome}/>
-            <Button title='Abrir Guko' onPress={abrir} />
-            <Text style={styles.mensagem}>{mensagem}</Text>
+            <Image source={require("../assets/images/guko.png")} style={styles.image} />
+            <Text style={styles.texto}>Cadastro</Text>
+
+            <TextInput value={nome1} onChangeText={setNome1} style={styles.nome}/>
+            <TextInput value={nome2} onChangeText={setNome2} style={styles.nome}/>
+            <TextInput value={nome3} onChangeText={setNome3} style={styles.nome}/>
+            <TextInput value={nome4} onChangeText={setNome4} style={styles.nome}/>
+
+            <View style={styles.butao}>
+                <Button title="Cadastrar"/>
+            </View>
         </View>
     );
 }
